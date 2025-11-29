@@ -168,10 +168,10 @@ const Stats = () => {
                 ></div>
               </motion.div>
               <div className="p-4 sm:p-5 md:p-6">
-                <h3 className="text-gray-700 dark:text-gray-200 text-sm sm:text-base md:text-lg font-medium mb-2 sm:mb-3 font-AnonymousPro line-clamp-2 h-10 sm:h-12">
-                  {stat.title}
+              <h3 className="text-gray-700 dark:text-gray-200 text-sm sm:text-base md:text-lg font-medium mb-2 sm:mb-3 font-AnonymousPro">
+              {stat.title}
                 </h3>
-                <motion.div
+               <motion.div
                   className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent font-Caveat`}
                   variants={numberCounter}
                 >
@@ -220,10 +220,10 @@ const Stats = () => {
               >
                 {stat.value}
               </span>
-              <span className="text-gray-700 dark:text-gray-300 text-2xs sm:text-xs md:text-sm text-center mt-0.5 sm:mt-1 line-clamp-1">
-                {stat.title.split('.')[0].substring(0, 12)}
-                {stat.title.split('.')[0].length > 12 ? '...' : ''}
+            <span className="text-gray-700 dark:text-gray-300 text-2xs sm:text-xs md:text-sm text-center mt-0.5 sm:mt-1">
+             {stat.title}
               </span>
+
             </motion.div>
           ))}
         </div>
